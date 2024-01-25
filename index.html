@@ -31,10 +31,12 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projet</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -43,33 +45,40 @@
         <img src="./assets/Rina.jpg" alt="Rina profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Bonjour, Je suis</p>
+        <p class="section__text__p1">Bonjour,Je suis</p>
         <h1 class="title">Rina WATI</h1>
         <p class="section__text__p2">Développeuse Web React Js</p>
         <div class="btn-container">
-          <button
+          <a href="./assets/CV-Rina-WATI.pdf" target="_blank"
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf', '_blank')"
           >
           Télécharger CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          </a>
+          <a  href="./#contact"class="btn btn-color-1">
             Contact Info
-          </button>
+          </a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/ni-kadek-rina-wati/'"
-          />
-          <img
-            src="./assets/github.png"
+          <a href="https://www.linkedin.com/in/ni-kadek-rina-wati/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/Rinawaticodes" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://codepen.io/your-work" target="_blank"><img
+            src="./assets/codepen.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Rinawaticodes'"
           />
+        </a>
         </div>
       </div>
     </section>
@@ -93,7 +102,7 @@
                 class="icon"
               />
               <h3>Expérience</h3>
-              <p>Un an <br />Développeuse Web</p><span>and</span>
+              <p>Un an<br />Développeuse Web</p><span>&</span>
               <br> <p>2+ ans de Social Media Marketing</p>
             </div>
             <div class="details-container">
@@ -104,7 +113,8 @@
               />
               <h3>Formation</h3>
               <p>Master Marketing et Commerciale</p>
-              <p>BTS Développement Web et Mobile</p>
+              <br>
+              <p>BTS Développeur Web et Mobile</p>
             </div>
           </div>
           <div class="text-container">
@@ -127,7 +137,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title"> Development Frontend</h2>
+            <h2 class="experience-sub-title">Développement Frontend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -147,19 +157,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>CSS & SASS</h3>
                   <p>Intermédiaire</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -191,6 +190,17 @@
                   class="icon"
                 />
                 <div>
+                  <h3>React Js</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3>TypeScript</h3>
                   <p>Débutant</p>
                 </div>
@@ -209,7 +219,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Development Backend </h2>
+            <h2 class="experience-sub-title">Développement Backend </h2>
             <div class="article-container">
               <article>
                 <img
@@ -279,20 +289,18 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <h2 class="experience-sub-title project-title">Application de Formulaire d'Audit Écotouristique pour l'ADT Marne</h2>
             <div class="btn-container">
-              <button
+              <a href="https://github.com/Rinawaticodes/2023-02-JS-Reims-project-3-adt" target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+              </a>
+              <a href="https://github.com/" target="_blank"
+                class="btn btn-color-2 project-btn" 
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
@@ -303,20 +311,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project 2</h2>
+            <h2 class="experience-sub-title project-title">Jeu de Cartes Wild Beer</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <a href="https://github.com/Rinawaticodes/2023-02-JS-Reims-project-2-wild-beer" target="_blank"
+                class="btn btn-color-2 project-btn"              >
                 Github
-              </button>
-              <button
+              </a>
+              <a href="https://wildbeerproject2.netlify.app" target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
@@ -327,20 +332,18 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project 3</h2>
+            <h2 class="experience-sub-title project-title">Application de Réseaux Sociaux WildKedin</h2>
             <div class="btn-container">
-              <button
+              <a href="https://github.com/Rinawaticodes/Project1-Wildkedin" target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
               >
                 Github
-              </button>
-              <button
+              </a>
+              <a href="https://rinawaticodes.github.io/Project1-Wildkedin/" target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -370,7 +373,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/ni-kadek-rina-wati/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/ni-kadek-rina-wati/", target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </section>
