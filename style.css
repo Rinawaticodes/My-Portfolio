@@ -58,8 +58,8 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-  font-size: 2rem;
+.logo img{
+  width: 8vw;
 }
 
 .logo:hover {
@@ -319,6 +319,9 @@ section {
 span {
     color: rgb(85, 85, 85);
 }
+.text-container {
+  text-align: justify;
+}
 
 /* EXPERIENCE SECTION */
 
@@ -375,6 +378,12 @@ article .icon {
   width: 90%;
   height: 90%;
 }
+.project-img2 {
+  border-radius: 2rem;
+  width: 90%;
+  height: 40vh;
+}
+
 
 .project-title {
   margin: 1rem;
@@ -454,6 +463,10 @@ footer p {
   }
   
   @media screen and (max-width: 1200px) {
+    .logo img {
+      width: 15vw;
+      margin-top: 2rem;
+    }
     #desktop-nav {
       display: none;
     }
